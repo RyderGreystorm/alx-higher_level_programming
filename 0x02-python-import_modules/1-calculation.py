@@ -7,17 +7,17 @@ if __name__ == '__main__':
 
     from calculator_1 import add, sub, mul, div
 
-    addres = a + b
+    addres = add(a, b)
     print("{} + {} = {}".format(a, b, addres))
 
     #subtraction
-    subres = a - b
+    subres = sub(a, b)
     print("{} - {} = {}".format(a, b, subres))
 
     #multiplication
-    mulres = a * b
+    mulres = mul(a, b)
     print("{} * {} = {}".format(a, b, mulres))
 
     #division
-    divres = a / b
+    divres = div(a, b)
     print("{} / {} = {}".format(a, b, int(divres)))
