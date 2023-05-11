@@ -10,14 +10,14 @@ if __name__ == '__main__':
     addres = add(a, b)
     print("{} + {} = {}".format(a, b, addres))
 
-    #subtraction
+    '''subtraction'''
     subres = sub(a, b)
     print("{} - {} = {}".format(a, b, subres))
 
-    #multiplication
+    '''multiplication'''
     mulres = mul(a, b)
     print("{} * {} = {}".format(a, b, mulres))
 
-    #division
+    '''division'''
     divres = div(a, b)
     print("{} / {} = {}".format(a, b, int(divres)))
