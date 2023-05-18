@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 
 def roman_to_int(roman_string):
-    string = roman_string.upper()
-    dic = {
+    if isinstance(roman_string, str):
+        string = roman_string.upper()
+        dic = {
             'I': 1,
             'II': 2,
             'III': 3,
@@ -32,25 +33,29 @@ def roman_to_int(roman_string):
             'CM': 900,
             'M': 1000,
             'MM': 2000,
-            'MMM': 3000,
-           }
+            'MMM': 3000
+            }
 
-    sum = 0
-    for char in string:
-        if char not in dic:
-            return 0
-        else:
-            sum += dic[char]
-    if 'IV' in string:
-        sum -= 2
-    if 'IX' in string:
-        sum -= 2
-    if 'XL' in string:
-        sum -= 20
-    if 'XC' in string:
-        sum -= 20
-    if 'CD' in string:
-        sum -= 200
-    if 'CM' in string:
-        sum -= 200
-    return sum
+        sum = 0
+        for char in string:
+            if char not in dic:
+                return 0
+            else:
+                sum += dic[char]
+        if 'IV' in string:
+            sum -= 2
+        if 'IX' in string:
+            sum -= 2
+        if 'XL' in string:
+            sum -= 20
+        if 'XC' in string:
+            sum -= 20
+        if 'CD' in string:
+            sum -= 200
+        if 'CM' in string:
+            sum -= 200
+        return sum
+    elif roman_string is None:
+        return 0
+    else:
+        return 0
