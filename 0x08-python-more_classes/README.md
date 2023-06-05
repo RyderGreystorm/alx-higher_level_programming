@@ -1,2 +1,2 @@
-# MORE CLASSES IN PYTHON
-Thi project is to test my understanding of object oriented programming in python
+# Object Oriented Programming
+THe is a continuation of my studies in object oriented progrmming in python
