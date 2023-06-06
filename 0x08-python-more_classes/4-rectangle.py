@@ -2,6 +2,7 @@
 
 """Adding __repr___"""
 
+
 class Rectangle:
     """Rectangle Definition"""
 
@@ -53,6 +54,7 @@ class Rectangle:
         for _ in range(self.__height):
             rec_str += "#" * self.__width + "\n"
         return rec_str[:-1]
+
     def __repr__(self):
         """Representation of the rectangle object"""
         return f"Rectangle({self.__width}, {self.__height})"
