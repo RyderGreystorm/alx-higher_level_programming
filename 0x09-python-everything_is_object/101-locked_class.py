@@ -3,5 +3,8 @@
 
 
 class LockedClass:
-    """class creation"""
-    __slot__ = ['first_name']
+    """
+    restricts user to useonly a specific attribute
+    to set name
+    """
+    __slot__ = ["first_name"]
