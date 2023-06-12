@@ -6,4 +6,4 @@ def lookup(obj):
     Args:
         obj: object passed to function as params
     """
-    return [i for i in dir(obj) if not i.startswith('__')]
+    return [i for i in dir(obj) if i.startswith('__')]
