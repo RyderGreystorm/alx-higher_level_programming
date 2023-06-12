@@ -27,3 +27,12 @@ Printing list sorted in accending order
 Printing List after sort method:
 >>> print(my_list)
 [1, 4, 2, 3, 5]
+
+==============================================
+For empty list
+>>> my_list = MyList()
+>>> print(my_list)
+[]
+
+>>> my_list.print_sorted()
+[]
