@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""function that reads file and prints its content to the standard output"""
+
 
 def read_file(filename=""):
     """
