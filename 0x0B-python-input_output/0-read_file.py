@@ -10,6 +10,7 @@ def read_file(filename=""):
     Return:
         Nothing
     """
+
     with open(filename, encoding="utf-8") as f:
-        f_read = f.read()
-        print(f_read)
+        for text in f:
+            print(text, end="")
