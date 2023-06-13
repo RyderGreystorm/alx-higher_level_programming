@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-import json
 """create a python object from a JSON"""
+
+import json
 
 
 def load_from_json_file(filename):
