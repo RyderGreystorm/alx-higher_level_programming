@@ -2,6 +2,7 @@
 """
 Geometric class"""
 
+
 class BaseGeometry:
     """
     Geomtric base class
