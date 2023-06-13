@@ -4,6 +4,3 @@
 
 
 class BaseGeometry:
-    """
-    Geometry base class
-    """
