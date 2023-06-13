@@ -1,4 +1,4 @@
-#!//usr/bin/python3
+#!/usr/bin/python3
 import json
 """create a python object from a JSON"""
 
