@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 """
-student class and json conversion 
+student class and json conversion
 """
+
 
 class Student:
     """class definition"""
@@ -16,7 +17,7 @@ class Student:
         instance and returns it
         """
         serialized_dic = {}
-        
+
         for key, value in self.__dict__.items():
             serialized_dic[key] = value
 
