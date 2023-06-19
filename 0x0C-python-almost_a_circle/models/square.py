@@ -25,7 +25,7 @@ class Square(Rectangle):
 
         """String method for instnces of the class"""
 
-        return "[square] ({}) {}/{} - {}".format(
+        return "[Square] ({}) {}/{} - {}".format(
                 self.id,
                 self.x,
                 self.y,
