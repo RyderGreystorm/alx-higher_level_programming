@@ -1,27 +1,25 @@
 #!/usr/bin/python3
-""" 2-main """
-from models.rectangle import Rectangle
+""" 9-main """
+from models.square import Square
 
 if __name__ == "__main__":
 
-    try:
-        Rectangle(10, "2")
-    except Exception as e:
-        print("[{}] {}".format(e.__class__.__name__, e))
+    s1 = Square(5)
+    print(s1)
+    print(s1.area())
+    s1.display()
 
-    try:
-        r = Rectangle(10, 2)
-        r.width = -10
-    except Exception as e:
-        print("[{}] {}".format(e.__class__.__name__, e))
+    print("---")
 
-    try:
-        r = Rectangle(10, 2)
-        r.x = {}
-    except Exception as e:
-        print("[{}] {}".format(e.__class__.__name__, e))
+    s2 = Square(2, 2)
+    print(s2)
+    print(s2.area())
+    s2.display()
 
-    try:
-        Rectangle(10, 2, 3, -1)
-    except Exception as e:
-        print("[{}] {}".format(e.__class__.__name__, e))
+    print("---")
+
+    s3 = Square(3, 1, 3)
+    print(s3)
+    print(s3.area())
+    s3.display()
+
