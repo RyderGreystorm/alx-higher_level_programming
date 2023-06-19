@@ -73,5 +73,5 @@ class Base():
             d_data = Square(12, 2, 2)
         else:
             d_data = cls()
-        d_data.update(dictionary)
+        d_data.update(**dictionary)
         return d_data
