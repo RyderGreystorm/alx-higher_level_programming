@@ -33,10 +33,16 @@ class Square(Rectangle):
 
     @property
     def size(self):
+        """
+        returns the value of size
+        """
         return self.width
 
     @size.setter
     def size(self, value):
+        """
+        sets the value of the test
+        """
         self.width = value
         self.height = value
 
@@ -67,6 +73,10 @@ class Square(Rectangle):
                 self.y = kwargs['y']
 
     def to_dictionary(self):
+        """
+        converts object attributes to dictionary
+        Returs: dictionary of the object
+        """
         return {
                 'id': self.id,
                 'size': self.__size,
