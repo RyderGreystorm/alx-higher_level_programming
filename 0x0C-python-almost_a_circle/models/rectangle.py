@@ -12,7 +12,7 @@ class Rectangle(Base):
 
     def __init__(self, width, height, x=0, y=0, id=None):
         """
-    objects of clas Rectangle will have the above attributes
+        objects of class Rectangle will have the above attributes
         """
         if not isinstance(width, int):
             raise TypeError("width must be an integer")
