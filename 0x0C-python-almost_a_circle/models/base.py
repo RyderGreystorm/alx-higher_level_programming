@@ -45,3 +45,33 @@ class Base():
             json_objs = [obj.to_dictionary() for obj in list_objs]
         with open(filename, mode="w", encoding="utf-8") as f:
             f.write(cls.to_json_string(json_objs))
+
+    @staticmethod
+    def from_json_string(json_string):
+        """
+        json rep of list of dictionaries
+        Args:
+            json_string: json formt of list_obj
+        """
+        if json_string is None or len(json_string) == 0:
+            return []
+        return json.loads(json_string)
+
+    @classmethod
+    def create(cls, **dictionary):
+        """
+        Returns: Attributes of ll instances set
+        Args:
+            **dictionary: keyworded aruments passed as params
+        """
+        from models.square import Square
+        from models.rectangle import Rectangle
+
+        if cls.__name__ == "Rectangle":
+            d_data = Rectangle(2, 3, 1, 1)
+        elif cls.__name__ == "Square":
+            d_data = Square(12, 2, 2)
+        else:
+            d_data = cls()
+        d_data.update(dictionary)
+        return d_data
