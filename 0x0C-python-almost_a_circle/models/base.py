@@ -28,7 +28,7 @@ class Base():
         Arg:
             list_dictionaries: argument to be converted to json
         """
-        if list_dictionaries is None or len(list_dictionries) == 0:
+        if list_dictionaries is None or len(list_dictionaries) == 0:
             return "[]"
         return json.dumps(list_dictionaries)
 
