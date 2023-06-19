@@ -28,8 +28,6 @@ class Base():
         Arg:
             list_dictionaries: argument to be converted to json
         """
-        if not isinstance(list_dictionaries, list):
-            return "[]"
         if list_dictionaries is None:
             return "[]"
         return json.dumps(list_dictionaries)
