@@ -67,10 +67,13 @@ class Base():
         from models.square import Square
         from models.rectangle import Rectangle
 
+        if not isinstance(dictionary, dict):
+            raise TypeError("Argument must be a dictionary")
+
         if cls.__name__ == "Rectangle":
-            d_data = Rectangle(2, 3, 1, 1)
+            d_data = Rectangle(2, 3)
         elif cls.__name__ == "Square":
-            d_data = Square(12, 2, 2)
+            d_data = Square(12)
         else:
             d_data = cls()
         d_data.update(**dictionary)
