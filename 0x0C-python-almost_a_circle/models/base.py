@@ -78,3 +78,21 @@ class Base():
             d_data = cls()
         d_data.update(**dictionary)
         return d_data
+
+    @classmethod
+    def load_from_file(cls):
+        """
+        loads json string form file and deserializes it
+        """
+        list_j = []
+        filename = cls.__name__ + ".json"
+        try:
+            with open(filename, mode='r', encoding="utf-8") as fp:
+                ret = fp.read()
+                data = cls.from_json_string(ret)
+            for j_string in data:
+                instance = cls.create(**j_string)
+                list_j.append(instance)
+            return list_j
+        except FileNotFoundError:
+            return []
