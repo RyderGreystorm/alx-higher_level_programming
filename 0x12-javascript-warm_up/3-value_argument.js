@@ -1,7 +1,7 @@
-#!/usr/bin/bash
-
-if (process.argv[2]) {
-  console.log(process.argv[2]);
+#!/usr/bin/node
+const mva = process.argv[2];
+if (mva) {
+  console.log(mva);
 } else {
   console.log('No argument');
 }
