@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""Passing queries to mysql server using MySQLdb"""
+
 
 import sys
 import MySQLdb
