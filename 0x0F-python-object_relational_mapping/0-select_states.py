@@ -21,7 +21,7 @@ def run():
             db=db_name)
 
     cursor = db.cursor()
-    query = 'SELECT * FROM states ORDER BY states.id LIMIT 5'
+    query = r'SELECT * FROM states ORDER BY states.id LIMIT 5'
     cursor.execute(query)
 
     results = cursor.fetchall()
