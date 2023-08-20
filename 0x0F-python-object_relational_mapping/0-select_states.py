@@ -31,7 +31,6 @@ def run():
         print(row)
 
     cursor.close()
-    db.close()
 
 
 if __name__ == "__main__":
