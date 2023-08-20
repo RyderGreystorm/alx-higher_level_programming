@@ -22,7 +22,10 @@ def run():
 
     cursor = db.cursor()
 
-    query = "SELECT * FROM states WHERE states.name LIKE ('{}') ORDER BY states.id".format(s_query)
+    query = "SELECT *\
+            FROM states\
+            WHERE states.name LIKE ('{}')\
+            ORDER BY states.id".format(s_query)
     cursor.execute(query)
     result = cursor.fetchall()
 
