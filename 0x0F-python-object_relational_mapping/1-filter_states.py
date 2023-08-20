@@ -20,7 +20,10 @@ def run():
             db=db_name)
 
     cursor = db.cursor()
-    query = r"SELECT * FROM states WHERE name  LIKE 'N%' ORDER BY states.id"
+    query = "SELECT *\
+            FROM states\
+            WHERE BINARY states.name LIKE 'N%'\
+            ORDER BY states.id"
 
     cursor.execute(query)
     result = cursor.fetchall()
