@@ -21,7 +21,8 @@ def run():
 
     # execute query
     query = session.query(City, State.name).\
-            join(State).order_by(City.id)
+            join(State).\
+            order_by(City.id)
     # print(query.all())
     for city, stateName in query.all():
         print(f"{stateName}: ({city.id}) {city.name}")
