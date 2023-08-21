@@ -23,8 +23,8 @@ def run():
 
     # Execute query
     states_to_delete = session.query(State).\
-            filter(State.name.like(r'%a%')).\
-            all()
+        filter(State.name.like(r'%a%')).\
+        all()
 
     for state in states_to_delete:
         session.delete(state)
